@@ -1,0 +1,55 @@
+{"event": "start", "name": "mini-acc0-circuits", "time": 1781516950.140005}
+{"event": "round_start", "round": 1, "before": 213, "time": 1781516950.141533}
+{"event": "round_end", "round": 2, "after": 536, "delta": 85, "exit": -1, "time": 1781517072.7471137}
+{"event": "done", "lines": 536, "readme": false, "time": 1781517072.7488708}
+{"event": "round_end", "round": 1, "after": 724, "delta": 511, "exit": -1, "time": 1781517249.0335813}
+{"event": "round_start", "round": 2, "before": 724, "time": 1781517249.0363057}
+The SKILL.md file is the **GOLD SKILL** master specification for the `mini-theory-of-computation` project. Here's a summary of its key contents:
+
+---
+
+## Core Philosophy
+> **知识覆盖率 = 完成标准。代码量 = 准入门槛。两者缺一不可。**
+> (Knowledge coverage = completion standard. Code volume = entry threshold. Both are indispensable.)
+
+## Dual Standard
+Each sub-module (e.g. `mini-acc0-circuits/`) must satisfy **both**:
+- **Entry condition**: ≥3,000 lines of production code (`include/` + `src/`) per sub-module (excluding tests, examples, Lean files)
+- **Completion condition**: L1–L6 Complete + L7–L9 Partial across the nine knowledge levels
+
+## Nine Knowledge Levels (L1–L9)
+| L1 | Definitions | P, NP, Turing machine, circuit family |
+| L2 | Core Concepts | polynomial time, non-determinism, hierarchy |
+| L3 | Math Structures | Turing machine tuples, Boolean circuit DAGs, CNF/DNF |
+| L4 | Fundamental Theorems | Cook-Levin, Time Hierarchy, Savitch, Ladner |
+| L5 | Algorithms | DPLL/CDCL, switching lemma, IP=PSPACE |
+| L6 | Canonical Problems | SAT, 3SAT, VERTEX-COVER, PARITY |
+| L7 | Applications | cryptography, formal verification, PAC learning |
+| L8 | Advanced Topics | PCP Theorem, natural proofs barrier |
+| L9 | Research Frontiers | meta-complexity, GCT, quantum complexity |
+
+## Nine-School Curriculum Alignment
+MIT · Stanford · Berkeley · CMU · Princeton · Caltech · Cambridge · Oxford · ETH
+
+## Mandatory Structure per Sub-Module
+```
+mini-xxx/
+├── Makefile, README.md
+├── include/ (≥4 headers)
+├── src/ (≥4 C files + ≥1 Lean file)
+├── tests/ (assert-based)
+├── examples/ (≥3 runnable)
+├── demos/, benches/
+└── docs/ (knowledge-graph.md, coverage-report.md, gap-report.md,
+          course-alignment.md, course-tree.md)
+```
+
+## Strict Anti-Filler Rules
+Zero tolerance for padding: no `_fn1.._fnN`, `_aux1.._auxN`, `_ext1.._extN` patterns, no copied stub blocks in Lean, no `by trivial` on non-trivial propositions, no `sorry` in complete modules.
+
+## Completion Scoring
+- Each L1–L9 layer scored: Complete (2), Partial (1), Missing (0)
+- **COMPLETE**: ≥16/18 with L1≠Missing, L4≠Missing, ≥6 layers Complete
+- Safety review (filler scan, stub scan, empty file scan, doc completeness, self-consistency) must pass before declaring COMPLETE.
+{"event": "round_end", "round": 2, "after": 724, "delta": 0, "exit": 0, "time": 1781517269.0040884}
+{"event": "done", "lines": 724, "readme": false, "time": 1781517269.0071375}

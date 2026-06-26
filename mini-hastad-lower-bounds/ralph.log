@@ -1,0 +1,6 @@
+{"event": "start", "name": "mini-hastad-lower-bounds", "time": 1781573104.8599262}
+{"event": "complete", "time": 1781573104.8627038}
+{"event": "done", "lines": 3022, "readme": true, "time": 1781573104.866021}
+Worker: mini-hastad-lower-bounds | Target: 3000
+DONE: 3022 lines
+FINAL: 3022 lines

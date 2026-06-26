@@ -1,0 +1,104 @@
+{"event": "start", "name": "mini-switching-lemma", "time": 1781516950.1536841}
+{"event": "round_start", "round": 1, "before": 914, "time": 1781516950.155662}
+This is the **GOLD SKILL** specification for the `mini-theory-of-computation` project. Here's a summary of its key structure:
+
+---
+
+### Core Principle: Dual Standard
+Every submodule must satisfy **both**:
+- **Code quantity**: ≥ 3,000 lines per submodule (`include/` + `src/`, excluding `.lean`, tests, examples)
+- **Knowledge coverage**: L1–L6 **Complete** + L7–L9 **Partial+**
+
+### Nine Knowledge Levels (L1–L9)
+| Level | Name | Requirement |
+|-------|------|-------------|
+| L1 | Definitions | All core definitions as C structs + Lean defs |
+| L2 | Core Concepts | Implementation modules for each concept |
+| L3 | Mathematical Structures | Complete data types and operations |
+| L4 | Fundamental Laws | Code verification (C) + formal statements (Lean) |
+| L5 | Algorithms/Methods | At least one full implementation per algorithm |
+| L6 | Canonical Problems | Runnable examples for each problem |
+| L7 | Applications | ≥ 2 application examples |
+| L8 | Advanced Topics | ≥ 1 advanced topic implemented |
+| L9 | Research Frontiers | Documentation minimum |
+
+### Reference Schools
+MIT · Stanford · Berkeley · CMU · Princeton · Caltech · Cambridge · Oxford · ETH
+
+### Prohibited Behaviors
+- Filler/stub code (batch-generated function variants)
+- Lean `sorry`/`by trivial` on non-trivial theorems
+- Cross-file copy-pasted Lean blocks
+- Code without proper documentation
+
+### Submodule Directory Structure
+```
+mini-xxx/
+├── Makefile, README.md
+├── include/ (≥4 headers)
+├── src/ (≥4 C files + ≥1 Lean file)
+├── tests/, examples/ (≥3), demos/, benches/
+├── docs/ (5 knowledge documents)
+```
+
+### Safety Review (Zero Tolerance)
+- Filler patterns (`_fnN`, `_auxN`, `_extN`) → **0 matches**
+- Lean stub patterns (`:= 0.0`, `:= []`, `by trivial`) → **0 matches**
+- Empty/small files (<200 bytes) → **0 allowed**
+
+---
+
+What would you like me to do with this specification — audit a specific submodule, help build one, or something else?
+{"event": "round_end", "round": 1, "after": 914, "delta": 0, "exit": 0, "time": 1781516970.650874}
+{"event": "round_start", "round": 2, "before": 914, "time": 1781516970.6524308}
+This is the **SKILL.md** file — the gold standard specification for the `mini-theory-of-computation` project. Here's a summary of its structure:
+
+---
+
+### Core Philosophy
+- **Dual Standard**: Every sub-module must have both **≥3,000 lines** of code (in `include/` + `src/`, excluding `.lean`, tests, examples) AND full knowledge coverage across 9 levels.
+- **Code is the carrier of knowledge** — one knowledge point → one natural implementation → one test → one example.
+
+---
+
+### Nine-Layer Knowledge System (L1–L9)
+
+| Level | Name | Example Topics |
+|-------|------|----------------|
+| L1 | Definitions | P, NP, Turing machine, circuit family |
+| L2 | Core Concepts | Polynomial time, non-determinism, diagonalization |
+| L3 | Mathematical Structures | Turing machine formal tuple, Boolean circuits, DNF/CNF |
+| L4 | Fundamental Laws | Cook-Levin Theorem, Time Hierarchy, Savitch's Theorem |
+| L5 | Algorithms/Methods | DPLL/CDCL SAT, switching lemma, IP=PSPACE |
+| L6 | Canonical Problems | SAT, 3SAT, CLIQUE, HAM-PATH, TQBF |
+| L7 | Applications | Cryptography, formal verification, PAC learning |
+| L8 | Advanced Topics | PCP Theorem, circuit lower bounds, natural proofs |
+| L9 | Research Frontiers | Meta-complexity, GCT, quantum complexity |
+
+---
+
+### Key Rules and Prohibitions
+
+- **Anti-Filler Iron Law**: No loop-generated stubs, no same-pattern function bodies repeated >3 times, no dead code files just to pad line counts.
+- **Lean 4 rules**: No `by trivial` on non-trivial propositions, no `sorry`, no cross-file copy-paste of same code blocks, no `axiom` for provable theorems.
+- **Completion requires**: L1–L6 **Complete**, L7–L8 **Partial+**, L9 **Partial**.
+
+---
+
+### Audit & Safety Review
+- Deep audit scripts checking each of the 9 layers
+- **Filler detection scans** (grep for patterns like `_fn[0-9]`, `_aux[0-9]`, `by trivial`, `sorry`)
+- **Zero tolerance** for detected fillers — must be removed or replaced
+
+---
+
+### Project Structure
+The project is organized into sub-modules like `mini-cook-levin-theorem/`, `mini-switching-lemma/`, `mini-boolean-circuits-model/`, etc., under themes such as circuit complexity, algorithmic complexity, and complexity foundations.
+
+This is essentially a rigorous, self-enforcing specification for building a comprehensive, code-backed theory of computation knowledge base.
+{"event": "round_end", "round": 2, "after": 1537, "delta": 623, "exit": 0, "time": 1781516985.5603497}
+{"event": "done", "lines": 1537, "readme": false, "time": 1781516985.5622637}
+{"event": "round_end", "round": 1, "after": 667, "delta": -247, "exit": -1, "time": 1781517049.5675232}
+{"event": "round_start", "round": 2, "before": 667, "time": 1781517049.5688431}
+{"event": "round_end", "round": 2, "after": 2336, "delta": 1669, "exit": -1, "time": 1781517348.4614558}
+{"event": "done", "lines": 2336, "readme": false, "time": 1781517348.462702}

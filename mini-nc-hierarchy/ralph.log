@@ -1,0 +1,48 @@
+{"event": "start", "name": "mini-nc-hierarchy", "time": 1781516950.1513925}
+{"event": "round_start", "round": 1, "before": 778, "time": 1781516950.1537304}
+The file is the **GOLD SKILL** master specification for the `mini-theory-of-computation` project. Here's a summary of its contents:
+
+## Core Philosophy
+- **Dual Standard**: Every sub-module must have **≥3,000 lines** of real code (`include/` + `src/`) AND satisfy **nine-level knowledge coverage** (L1–L6 Complete, L7–L9 Partial+). Both are independently required.
+- The project aims to implement the common core of theory-of-computation courses from: **MIT, Stanford, Berkeley, CMU, Princeton, Caltech, Cambridge, Oxford, ETH**.
+
+## Nine Knowledge Levels (L1–L9)
+| L1 | Definitions | P, NP, Turing machine, circuit family, reduction |
+| L2 | Core Concepts | polynomial time, non-determinism, hierarchy, diagonalization |
+| L3 | Math Structures | Boolean circuit DAG, DNF/CNF formulas |
+| L4 | Fundamental Laws | Cook-Levin, Time Hierarchy, Savitch |
+| L5 | Algorithms/Methods | DPLL SAT solving, switching lemma |
+| L6 | Canonical Problems | SAT, 3SAT, CLIQUE, TQBF |
+| L7 | Applications | cryptography, formal verification |
+| L8 | Advanced Topics | PCP Theorem, circuit lower bounds |
+| L9 | Research Frontiers | meta-complexity, GCT, quantum complexity |
+
+## Anti-Filler Iron Law
+Strictly prohibits: loop-generated stub functions (`_fn1.._fnN`), same-pattern functions repeated >3 times, Lean `by trivial` on non-trivial propositions, cross-file copy-paste, `sorry` in completed modules, and dead functions returning constants.
+
+## Sub-module Structure
+Each `mini-xxx/` must contain: `Makefile`, `README.md`, `include/` (≥4 headers), `src/` (≥4 C + ≥1 Lean), `tests/`, `examples/` (≥3), `demos/`, `benches/`, `docs/` (5 knowledge documents).
+
+## Current Context
+We're in **`mini-circuit-complexity/mini-nc-hierarchy/`** — one of the circuit complexity sub-modules. Would you like me to audit this sub-module against the SKILL.md standards, or take some other action?
+{"event": "round_end", "round": 1, "after": 778, "delta": 0, "exit": 0, "time": 1781516968.1843534}
+{"event": "round_start", "round": 2, "before": 778, "time": 1781516968.1866956}
+This is the **Gold Skill** document for the mini-theory-of-computation project. I've read and understood the full specification, including:
+
+- **Dual Standard**: Every submodule needs ≥3,000 lines of `include/` + `src/` code **and** L1-L6 Complete + L7-L9 Partial+ knowledge coverage.
+- **Nine Knowledge Levels**: L1 (Definitions) through L9 (Research Frontiers)
+- **Nine-school curriculum**: MIT, Stanford, Berkeley, CMU, Princeton, Caltech, Cambridge, Oxford, ETH
+- **Forbidden patterns**: No filler/stub code, no Lean `sorry`/`by trivial` abuse, no cross-file copy-paste
+- **Mandatory audit**: Safety review with zero-tolerance on filler detection
+
+It looks like your current working directory is `mini-nc-hierarchy/`. Would you like me to:
+
+1. **Audit** the current state of `mini-nc-hierarchy/` against the SKILL.md standards?
+2. **Build/implement** parts of the NC hierarchy submodule?
+3. **Review** existing code for filler violations or missing knowledge coverage?
+
+What's the specific action you'd like me to take?
+{"event": "round_end", "round": 2, "after": 1342, "delta": 564, "exit": 0, "time": 1781516984.7855754}
+{"event": "done", "lines": 1342, "readme": false, "time": 1781516984.7881863}
+{"event": "round_end", "round": 2, "after": 1342, "delta": 564, "exit": -1, "time": 1781517069.8249545}
+{"event": "done", "lines": 1342, "readme": false, "time": 1781517069.8269546}

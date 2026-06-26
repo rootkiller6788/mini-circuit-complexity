@@ -1,0 +1,6 @@
+{"event": "start", "name": "mini-razborov-smolensky", "time": 1781573104.8613303}
+{"event": "complete", "time": 1781573104.8640609}
+{"event": "done", "lines": 3048, "readme": true, "time": 1781573104.8672366}
+Worker: mini-razborov-smolensky | Target: 3000
+DONE: 3048 lines
+FINAL: 3048 lines
